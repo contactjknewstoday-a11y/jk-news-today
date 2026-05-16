@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: contactjknewstoday-a11y/jk-news-today
-  branch: main
+  name: test-repo
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -13,7 +11,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["Kashmir","India","World","Sports","Technology","Business"]}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Kashmir","India","World","Sports","Technology","Business"] }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Content", name: "body", widget: "markdown" }
